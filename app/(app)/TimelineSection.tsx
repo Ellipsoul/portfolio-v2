@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import { classNames, timeline } from "./constants";
+import Image from "next/image";
 
 export default function TimelineSection(): ReactElement {
   return (
@@ -12,18 +13,24 @@ export default function TimelineSection(): ReactElement {
           <li key={event.id} className="relative pb-8">
             {/* Vertical timeline segment */}
             {eventIdx !== timeline.length - 1 ? (
-              <span className="absolute top-4 left-4 lg:left-6 -ml-px h-full w-0.5 bg-primary-200" aria-hidden="true" />
-            ) : null}
-            <div className="relative flex space-x-3 lg:pl-2">
               <span
-                className={classNames(
-                  event.iconBackground,
-                  "h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white",
-                )}
-              >
-                <event.icon className="h-5 w-5 text-white" aria-hidden="true" />
-              </span>
-              <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                className="absolute top-4 left-6 lg:left-10 -ml-px h-full w-0.5 bg-primary-300"
+                aria-hidden="true"
+              />
+            ) : null}
+            {/* Main timeline event container */}
+            <div className="relative flex space-x-3 lg:pl-2">
+              {/* Image */}
+              <Image
+                className="h-12 w-12 md:h-16 md:w-16 rounded-full flex items-center justify-center
+                ring-8 ring-white ring-inset border border-primary-300"
+                src={event.imageSrc}
+                width={50}
+                height={50}
+                aria-hidden="true"
+                alt={""}
+              />
+              <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5 border border-green-400">
                 <div>
                   <p className="text-sm text-primary-500">
                     {event.content}{" "}

@@ -105,13 +105,7 @@ export interface TimelineItem {
   href: string;
   date: string;
   datetime: string;
-  icon: ForwardRefExoticComponent<
-    SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
-      titleId?: string | undefined;
-    }
-  >;
-  iconBackground: string;
+  imageSrc: string;
 }
 
 export const timeline: TimelineItem[] = [
@@ -122,8 +116,7 @@ export const timeline: TimelineItem[] = [
     href: "#",
     date: "Sep 20",
     datetime: "2020-09-20",
-    icon: UserIcon,
-    iconBackground: "bg-primary-400",
+    imageSrc: "/logos/amazon.png",
   },
   {
     id: 2,
@@ -132,8 +125,7 @@ export const timeline: TimelineItem[] = [
     href: "#",
     date: "Sep 22",
     datetime: "2020-09-22",
-    icon: HandThumbUpIcon,
-    iconBackground: "bg-blue-500",
+    imageSrc: "/logos/thg.png",
   },
   {
     id: 3,
@@ -142,8 +134,7 @@ export const timeline: TimelineItem[] = [
     href: "#",
     date: "Sep 28",
     datetime: "2020-09-28",
-    icon: CheckIcon,
-    iconBackground: "bg-green-500",
+    imageSrc: "/logos/imperial.png",
   },
   {
     id: 4,
@@ -152,17 +143,6 @@ export const timeline: TimelineItem[] = [
     href: "#",
     date: "Sep 30",
     datetime: "2020-09-30",
-    icon: HandThumbUpIcon,
-    iconBackground: "bg-blue-500",
-  },
-  {
-    id: 5,
-    content: "Completed interview with",
-    target: "Katherine Snyder",
-    href: "#",
-    date: "Oct 4",
-    datetime: "2020-10-04",
-    icon: CheckIcon,
-    iconBackground: "bg-green-500",
+    imageSrc: "/logos/concordia.png",
   },
 ];
