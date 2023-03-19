@@ -6,8 +6,11 @@ export default function TimelineSection(): ReactElement {
   return (
     <section className="px-8 lg:px-12">
       {/* Heading */}
-      <div className="mx-auto max-w-4xl text-3xl leading-7 text-shade-800 dark:text-plain font-bold mb-10">
+      <div className="mx-auto max-w-4xl text-3xl leading-7 text-shade-800 dark:text-plain font-bold mb-2">
         Experience
+      </div>
+      <div className="mx-auto max-w-4xl text-shade-800 dark:text-plain font-normal md:font-medium mb-10 text-sm md:text-base">
+        A 30-second tour of my last decade
       </div>
       {/* Experience list */}
       <ul role="list" className="mx-auto max-w-4xl">

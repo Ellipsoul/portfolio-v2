@@ -177,42 +177,42 @@ export const projects: Project[] = [
     name: "Skystory",
     description:
       "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-    url: "www.google.com",
+    url: "https://skystory.aronteh.com/",
     image: "/project_logos/skystory.png",
   },
   {
     name: "NanoNote",
     description:
       "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-    url: "www.google.com",
+    url: "https://nanonote.aronteh.com/",
     image: "/project_logos/nanonote.png",
   },
   {
     name: "TurboFile",
     description:
       "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-    url: "www.google.com",
+    url: "https://turbofile.aronteh.com/",
     image: "/project_logos/turbofile.png",
   },
   {
     name: "Flutter Quiz",
     description:
       "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-    url: "www.google.com",
+    url: "https://quizapp.aronteh.com/",
     image: "/project_logos/quizapp.png",
   },
   {
     name: "Online Chat App",
     description:
       "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-    url: "www.google.com",
+    url: "https://github.com/Ellipsoul/online-chat-app",
     image: "/project_logos/onlinechat.png",
   },
   {
     name: "Travelling Salesman Problem Visualiser",
     description:
       "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-    url: "www.google.com",
+    url: "https://ellipsoul.github.io/Travelling-Salesman-Visualiser/",
     image: "/project_logos/tsp.png",
   },
 ];
