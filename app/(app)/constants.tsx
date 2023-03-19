@@ -100,54 +100,119 @@ export const social: NavigationSocialItem[] = [
 // Timeline Section Constants
 export interface TimelineItem {
   id: number;
-  content: string;
   organisation: string;
   role: string;
   href: string;
   imageSrc: string;
   location: string;
   time: string;
+  content: string;
 }
 
 export const timeline: TimelineItem[] = [
   {
     id: 1,
-    content: "Applied to",
     organisation: "Amazon",
     role: "Software Engineer",
     href: "#",
-    imageSrc: "/logos/amazon.png",
+    imageSrc: "/company_logos/amazon.png",
     location: "London, United Kingdom",
     time: "Nov 2022 - present",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit laudantium laboriosam \
+    rerum illum quibusdam obcaecati quo quas, quos, et perspiciatis deleniti error molestiae nisi ipsa, \
+    pariatur ipsum beatae modi!",
   },
   {
     id: 2,
-    content: "Advanced to phone screening by",
     organisation: "THG",
     role: "Software Engineer",
     href: "#",
-    imageSrc: "/logos/thg.png",
+    imageSrc: "/company_logos/thg.png",
     location: "United Kingdom",
     time: "Sep 2021 - Oct 2022",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit laudantium laboriosam \
+    rerum illum quibusdam obcaecati quo quas, quos, et perspiciatis deleniti error molestiae nisi ipsa, \
+    pariatur ipsum beatae modi!",
   },
   {
     id: 3,
-    content: "Completed phone screening with",
     organisation: "Imperial College London",
     role: "MEng Aeronautical Engineering",
     href: "#",
-    imageSrc: "/logos/imperial.png",
+    imageSrc: "/company_logos/imperial.png",
     location: "London, United Kingdom",
     time: "Sep 2017 - Jun 2021",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit laudantium laboriosam \
+    rerum illum quibusdam obcaecati quo quas, quos, et perspiciatis deleniti error molestiae nisi ipsa, \
+    pariatur ipsum beatae modi!",
   },
   {
     id: 4,
-    content: "Advanced to interview by",
     organisation: "Concordia International School Shanghai",
     role: "High School",
     href: "#",
-    imageSrc: "/logos/concordia.png",
+    imageSrc: "/company_logos/concordia.png",
     location: "Shanghai, China",
     time: "Aug 2013 - Jun 2017",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit laudantium laboriosam \
+    rerum illum quibusdam obcaecati quo quas, quos, et perspiciatis deleniti error molestiae nisi ipsa, \
+    pariatur ipsum beatae modi!",
+  },
+];
+
+// Projects Section Constants
+export interface Project {
+  name: string;
+  description: string;
+  url: string;
+  image: string;
+}
+
+export const projects: Project[] = [
+  {
+    name: "Skystory",
+    description:
+      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+    url: "www.google.com",
+    image: "/project_logos/skystory.png",
+  },
+  {
+    name: "NanoNote",
+    description:
+      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+    url: "www.google.com",
+    image: "/project_logos/nanonote.png",
+  },
+  {
+    name: "TurboFile",
+    description:
+      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+    url: "www.google.com",
+    image: "/project_logos/turbofile.png",
+  },
+  {
+    name: "Flutter Quiz",
+    description:
+      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+    url: "www.google.com",
+    image: "/project_logos/quizapp.png",
+  },
+  {
+    name: "Online Chat App",
+    description:
+      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+    url: "www.google.com",
+    image: "/project_logos/onlinechat.png",
+  },
+  {
+    name: "Travelling Salesman Problem Visualiser",
+    description:
+      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+    url: "www.google.com",
+    image: "/project_logos/tsp.png",
   },
 ];

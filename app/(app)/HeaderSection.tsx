@@ -24,9 +24,9 @@ const DarkModeToggle = () => {
       dark:bg-primary-600 dark:hover:bg-primary-500 dark:focus-visible:outline-primary-500"
     >
       {theme === "light" ? (
-        <SunIcon className="h-10 w-10" aria-hidden="true" />
+        <SunIcon className="h-6 w-6 sm:h-10 sm:w-10" aria-hidden="true" />
       ) : (
-        <MoonIcon className="h-10 w-10" aria-hidden="true" />
+        <MoonIcon className="h-6 w-6 sm:h-10 sm:w-10" aria-hidden="true" />
       )}
     </button>
   );

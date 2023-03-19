@@ -4,6 +4,7 @@ import React, { ReactElement } from "react";
 import HeaderSection from "./(app)/HeaderSection";
 import IntroSection from "./(app)/IntroSection";
 import TimelineSection from "./(app)/TimelineSection";
+import ProjectsSection from "./(app)/ProjectsSection";
 
 export default function HomePage(): ReactElement {
   return (
@@ -12,6 +13,7 @@ export default function HomePage(): ReactElement {
         <HeaderSection />
         <IntroSection />
         <TimelineSection />
+        <ProjectsSection />
       </div>
     </div>
   );
