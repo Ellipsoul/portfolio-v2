@@ -6,6 +6,7 @@ import IntroSection from "./(app)/IntroSection";
 import TimelineSection from "./(app)/TimelineSection";
 import ProjectsSection from "./(app)/ProjectsSection";
 import InterestsSection from "./(app)/InterestsSection";
+import ContactSection from "./(app)/ContactSection";
 
 export default function HomePage(): ReactElement {
   return (
@@ -16,6 +17,7 @@ export default function HomePage(): ReactElement {
         <TimelineSection />
         <ProjectsSection />
         <InterestsSection />
+        <ContactSection />
       </div>
     </div>
   );
