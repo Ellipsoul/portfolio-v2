@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         plain: colors.white,
         shade: colors.gray,
-        primary: colors.neutral,
+        primary: colors.slate,
         accent: colors.emerald,
         // secondary: colors.zinc,
       },
