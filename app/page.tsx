@@ -1,27 +1,16 @@
 "use client";
 
-import { useTheme } from "next-themes";
-import React, { ReactElement, useEffect, useState } from "react";
+import React, { ReactElement } from "react";
+import HeaderSection from "./(app)/HeaderSection";
+import IntroSection from "./(app)/IntroSection";
 
 export default function HomePage(): ReactElement {
   return (
-    <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-primary-100 dark:bg-primary-900">
-      <div className="mx-auto max-w-4xl bg-primary-200 dark:bg-primary-700">
-        <DarkModeBtn />
+    <div className="mx-auto px-4 sm:px-12 lg:px-24 bg-primary-200 dark:bg-primary-900">
+      <div className="mx-auto max-w-5xl bg-primary-100 dark:bg-primary-700">
+        <HeaderSection />
+        <IntroSection />
       </div>
     </div>
   );
 }
-
-const DarkModeBtn = () => {
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
-  });
-
-  if (!mounted) return null;
-
-  return <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>Toggle Theme</button>;
-};

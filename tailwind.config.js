@@ -13,9 +13,9 @@ module.exports = {
       colors: {
         plain: colors.white,
         shade: colors.gray,
-        primary: colors.zinc,
+        primary: colors.neutral,
+        accent: colors.emerald,
         // secondary: colors.zinc,
-        // accent: colors.sky,
       },
     },
   },
