@@ -6,8 +6,9 @@ import React, { ReactElement, useEffect, useState } from "react";
 export default function HomePage(): ReactElement {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-primary-100 dark:bg-primary-900">
-      <div className="mx-auto max-w-4xl bg-primary-200 dark:bg-primary-700">Hello</div>
-      <DarkModeBtn />
+      <div className="mx-auto max-w-4xl bg-primary-200 dark:bg-primary-700">
+        <DarkModeBtn />
+      </div>
     </div>
   );
 }
@@ -22,10 +23,5 @@ const DarkModeBtn = () => {
 
   if (!mounted) return null;
 
-  return (
-    <select value={theme} onChange={e => setTheme(e.target.value)}>
-      <option value="light">Light</option>
-      <option value="dark">dark</option>
-    </select>
-  );
+  return <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>Toggle Theme</button>;
 };
