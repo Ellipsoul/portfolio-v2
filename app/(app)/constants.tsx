@@ -16,7 +16,7 @@ export interface NavigationSocialItem {
 export const social: NavigationSocialItem[] = [
   {
     name: "Resume",
-    href: "https://twitter.com/",
+    href: "/Aron_Teh_Resume.pdf",
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg
         fill="currentColor"
@@ -33,7 +33,7 @@ export const social: NavigationSocialItem[] = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.youtube.com/",
+    href: "https://www.linkedin.com/in/aronteh/",
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -47,7 +47,7 @@ export const social: NavigationSocialItem[] = [
   },
   {
     name: "GitHub",
-    href: "https://github.com/",
+    href: "https://github.com/ellipsoul",
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -66,7 +66,7 @@ export const social: NavigationSocialItem[] = [
   },
   {
     name: "Facebook",
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/teharon/",
     icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -82,7 +82,7 @@ export const social: NavigationSocialItem[] = [
   },
   {
     name: "Twitter",
-    href: "https://twitter.com/",
+    href: "https://twitter.com/aron_teh",
     icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
