@@ -6,15 +6,16 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}"],
   plugins: [],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: { sans: ["Inter var", ...defaultTheme.fontFamily.sans] },
       colors: {
-        // plain: colors.white,
-        // primary: colors.slate,
+        plain: colors.white,
+        shade: colors.gray,
+        primary: colors.zinc,
         // secondary: colors.zinc,
         // accent: colors.sky,
-        // shade: colors.gray,
       },
     },
   },
