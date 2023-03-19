@@ -101,48 +101,53 @@ export const social: NavigationSocialItem[] = [
 export interface TimelineItem {
   id: number;
   content: string;
-  target: string;
+  organisation: string;
+  role: string;
   href: string;
-  date: string;
-  datetime: string;
   imageSrc: string;
+  location: string;
+  time: string;
 }
 
 export const timeline: TimelineItem[] = [
   {
     id: 1,
     content: "Applied to",
-    target: "Front End Developer",
+    organisation: "Amazon",
+    role: "Software Engineer",
     href: "#",
-    date: "Sep 20",
-    datetime: "2020-09-20",
     imageSrc: "/logos/amazon.png",
+    location: "London, United Kingdom",
+    time: "Nov 2022 - present",
   },
   {
     id: 2,
     content: "Advanced to phone screening by",
-    target: "Bethany Blake",
+    organisation: "THG",
+    role: "Software Engineer",
     href: "#",
-    date: "Sep 22",
-    datetime: "2020-09-22",
     imageSrc: "/logos/thg.png",
+    location: "United Kingdom",
+    time: "Sep 2021 - Oct 2022",
   },
   {
     id: 3,
     content: "Completed phone screening with",
-    target: "Martha Gardner",
+    organisation: "Imperial College London",
+    role: "MEng Aeronautical Engineering",
     href: "#",
-    date: "Sep 28",
-    datetime: "2020-09-28",
     imageSrc: "/logos/imperial.png",
+    location: "London, United Kingdom",
+    time: "Sep 2017 - Jun 2021",
   },
   {
     id: 4,
     content: "Advanced to interview by",
-    target: "Bethany Blake",
+    organisation: "Concordia International School Shanghai",
+    role: "High School",
     href: "#",
-    date: "Sep 30",
-    datetime: "2020-09-30",
     imageSrc: "/logos/concordia.png",
+    location: "Shanghai, China",
+    time: "Aug 2013 - Jun 2017",
   },
 ];

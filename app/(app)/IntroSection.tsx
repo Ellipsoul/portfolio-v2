@@ -25,7 +25,7 @@ export default function IntroSection(): ReactElement {
             key={item.name}
             target="_blank"
             href={item.href}
-            className="text-zinc-700 hover:text-zinc-600 dark:text-zinc-300 dark:hover:text-zinc-100 mx-auto"
+            className="text-zinc-700 hover:text-zinc-600 dark:text-zinc-100 dark:hover:text-zinc-50 mx-auto"
           >
             <span className="sr-only">{item.name}</span>
             <item.icon className={item.class} aria-hidden="true" />

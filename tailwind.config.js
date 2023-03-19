@@ -9,6 +9,10 @@ module.exports = {
   plugins: [],
   theme: {
     extend: {
+      spacing: {
+        "11/10": "110%",
+        "6/5": "120%",
+      },
       fontFamily: { sans: ["Inter var", ...defaultTheme.fontFamily.sans] },
       colors: {
         plain: colors.white,
