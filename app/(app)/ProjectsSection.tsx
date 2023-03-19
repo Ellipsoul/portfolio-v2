@@ -7,7 +7,7 @@ export default function ProjectsSection(): ReactElement {
   return (
     <section className="px-8 lg:px-12 pb-10">
       {/* Heading */}
-      <div className="mx-auto max-w-4xl text-3xl leading-7 text-shade-800 dark:text-plain font-bold mb-6">Projects</div>
+      <div className="mx-auto max-w-4xl text-3xl leading-7 text-shade-800 dark:text-plain font-bold mb-4">Projects</div>
       <div className="mx-auto max-w-4xl text-shade-800 dark:text-plain font-normal md:font-medium mb-6 text-sm md:text-base">
         As a self-taught developer, I learned to code by building apps that I would enjoy sharing, using technologies
         that I found interesting. I build to learn, so I design my projects to give me experience with a wide spectrum
