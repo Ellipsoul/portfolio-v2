@@ -1,5 +1,5 @@
+import { ChatBubbleLeftEllipsisIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 import { ForwardRefExoticComponent, SVGProps } from "react";
-import { CheckIcon, HandThumbUpIcon, UserIcon } from "@heroicons/react/20/solid";
 
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -252,5 +252,33 @@ export const interests: Interest[] = [
     ],
     logo: "/interest_logos/huggingface.png",
     url: "https://huggingface.co/Ellipsoul/",
+  },
+];
+
+// Contact Section Constants
+export interface ContactButton {
+  id: number;
+  text: string;
+  icon: ForwardRefExoticComponent<
+    SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+      titleId?: string | undefined;
+    }
+  >;
+  href: string;
+}
+
+export const contactButtons: ContactButton[] = [
+  {
+    id: 1,
+    text: "Send me an Email",
+    icon: EnvelopeIcon,
+    href: "mailto:aronteh.chess@gmail.com?subject=Hello&body=Hi!",
+  },
+  {
+    id: 2,
+    text: "Find me on LinkedIn",
+    icon: ChatBubbleLeftEllipsisIcon,
+    href: "https://www.linkedin.com/in/aronteh/",
   },
 ];

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { ReactElement } from "react";
-import { Interest, interests } from "./constants";
+import { Interest, classNames, interests } from "./constants";
 import Link from "next/link";
 
 export default function InterestsSection(): ReactElement {
@@ -21,8 +21,10 @@ export default function InterestsSection(): ReactElement {
             <Link href={interest.url} target="_blank">
               <li
                 key={interest.id}
-                className="relative py-5 px-4
-              bg-primary-100 dark:bg-primary-700 hover:bg-primary-200 dark:hover:bg-primary-600 "
+                className={classNames(
+                  interest.id !== 1 ? "border-t border-primary-500 dark:border-primary-100" : "",
+                  "relative py-5 px-4 my-1 bg-primary-100 dark:bg-primary-700 hover:bg-primary-200 dark:hover:bg-primary-600",
+                )}
               >
                 <div className="flex justify-between space-x-3">
                   {/* Name and duration */}
