@@ -11,8 +11,8 @@ export default function InterestsSection(): ReactElement {
         Interests
       </div>
       <div className="mx-auto max-w-4xl text-shade-800 dark:text-plain font-normal md:font-medium mb-6 text-sm md:text-base">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eaque vel excepturi ipsa reprehenderit impedit,
-        aspernatur aut incidunt in, optio laudantium perspiciatis deleniti quo error quis, fugiat et commodi eos!
+        The last several years have been a true challenge, and I consider myself lucky to have just a few hobbies under
+        my belt. With things now looking better, I cannot wait to explore new interests in the foreseeable future.
       </div>
       {/* Projects grid */}
       <div className="grid grid-cols-1 gap-4 max-w-4xl">
@@ -42,8 +42,8 @@ export default function InterestsSection(): ReactElement {
                 {/* Description list */}
                 <ul className="mt-2 pl-2 leading-7">
                   {interest.description.map(sentence => (
-                    <li className="list-item list-disc leading-5" key={sentence}>
-                      {sentence}
+                    <li className="list-item list-disc leading-5 mb-1" key={sentence.id}>
+                      {sentence.content}
                     </li>
                   ))}
                 </ul>

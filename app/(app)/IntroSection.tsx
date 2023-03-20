@@ -24,9 +24,7 @@ export default function IntroSection(): ReactElement {
           <Image className="rounded-full" width={120} height={120} src="/profile.jpg" alt={"Profile Photo"} />
         </div>
         <p className="mt-6 text-md md:text-xl leading-6 md:leading-8">
-          Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget
-          aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend
-          egestas fringilla sapien.
+          I'm a software engineer, chess player and machine learning enthusiast. It's nice to meet you!
         </p>
       </div>
       {/* Social Links */}
@@ -39,7 +37,8 @@ export default function IntroSection(): ReactElement {
             key={item.name}
             target="_blank"
             href={item.href}
-            className="text-zinc-700 hover:text-zinc-600 dark:text-zinc-100 dark:hover:text-plain mx-auto"
+            className="text-zinc-700 hover:text-zinc-600 dark:text-zinc-100 dark:hover:text-plain
+            mx-auto hover:scale-125"
           >
             <span className="sr-only">{item.name}</span>
             <item.icon className={item.class} aria-hidden="true" />

@@ -102,11 +102,10 @@ export interface TimelineItem {
   id: number;
   organisation: string;
   role: string;
-  href: string;
   imageSrc: string;
   location: string;
   time: string;
-  content: string;
+  content: string[];
 }
 
 export const timeline: TimelineItem[] = [
@@ -114,53 +113,56 @@ export const timeline: TimelineItem[] = [
     id: 1,
     organisation: "Amazon",
     role: "Software Engineer",
-    href: "#",
     imageSrc: "/company_logos/amazon.png",
     location: "London, United Kingdom",
     time: "Nov 2022 - present",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit laudantium laboriosam \
-    rerum illum quibusdam obcaecati quo quas, quos, et perspiciatis deleniti error molestiae nisi ipsa, \
-    pariatur ipsum beatae modi!",
+    content: [
+      "In my current position, I develop and test large-scale features for the Prime Video Living Room Platform.\
+      I work primarily in TypeScript and React, but I receive exposure to a wide spectrum of internal and external\
+      technologies.",
+      "My work can impact the experience of over 100 million Prime Video customers, so discipline and\
+      responsibility are built into my role. Strong communication and teamwork skills are also critical to my\
+      day-to-day performance.",
+    ],
   },
   {
     id: 2,
     organisation: "THG",
     role: "Software Engineer",
-    href: "#",
     imageSrc: "/company_logos/thg.png",
     location: "United Kingdom",
     time: "Sep 2021 - Oct 2022",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit laudantium laboriosam \
-    rerum illum quibusdam obcaecati quo quas, quos, et perspiciatis deleniti error molestiae nisi ipsa, \
-    pariatur ipsum beatae modi!",
+    content: [
+      "During my first full-time position, I performed full-stack engineering duties within a small team using Angular,\
+      TypeScript, Java and GraphQL. My team was responsible for an Angular component library, as well as a Content\
+      Management System that over 100 external clients used.",
+    ],
   },
   {
     id: 3,
     organisation: "Imperial College London",
     role: "MEng Aeronautical Engineering",
-    href: "#",
     imageSrc: "/company_logos/imperial.png",
     location: "London, United Kingdom",
     time: "Sep 2017 - Jun 2021",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit laudantium laboriosam \
-    rerum illum quibusdam obcaecati quo quas, quos, et perspiciatis deleniti error molestiae nisi ipsa, \
-    pariatur ipsum beatae modi!",
+    content: [
+      "My strong interest in mathematics and physics throughout high school inspired me to pursue Aerospace\
+      Engineering. Today my degree bears no relation to my career, but the challenge of learning and\
+      adapting rapidly to many difficult modules has set me up for success today.",
+    ],
   },
   {
     id: 4,
     organisation: "Concordia International School Shanghai",
     role: "High School",
-    href: "#",
     imageSrc: "/company_logos/concordia.png",
     location: "Shanghai, China",
     time: "Aug 2013 - Jun 2017",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis impedit laudantium laboriosam \
-    rerum illum quibusdam obcaecati quo quas, quos, et perspiciatis deleniti error molestiae nisi ipsa, \
-    pariatur ipsum beatae modi!",
+    content: [
+      "An American high school in China is no ordinary education environment, but it gives way to the most diverse\
+      group of peers I have ever been part of. I pursued Advanced Placement examinations and scored 5 out of 5 in 9\
+      subjects.",
+    ],
   },
 ];
 
@@ -174,44 +176,52 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "Skystory",
+    name: "SkyStory",
     description:
-      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "A fully responsive, dynamically themed weather app offering live or forecast weather data for almost\
+      any city worldwide. Powered by Firebase, authenticated users will have their historical\
+      searches saved for easy access.",
     url: "https://skystory.aronteh.com/",
     image: "/project_logos/skystory.png",
   },
   {
     name: "NanoNote",
     description:
-      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "A lightweight, dual-themed and responsive notes application. Get started with one click,\
+      and you will gain access to tools for creating, managing, sorting, and categorising an unlimited\
+      number of sticky notes.",
     url: "https://nanonote.aronteh.com/",
     image: "/project_logos/nanonote.png",
   },
   {
     name: "TurboFile",
     description:
-      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "A no-setup-required tool for sharing files almost instantly. Authenticate users gain additional\
+      features to view, download and manage uploaded files.",
     url: "https://turbofile.aronteh.com/",
     image: "/project_logos/turbofile.png",
   },
   {
-    name: "Flutter Quiz",
+    name: "Quiz App",
     description:
-      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "A multi-platform quiz app written with Flutter and Dart. Test your knowledge on various\
+    programming topics, and track your progress to completion.",
     url: "https://quizapp.aronteh.com/",
     image: "/project_logos/quizapp.png",
   },
   {
     name: "Online Chat App",
     description:
-      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "A simple chat application where you can log in with a username and chat with all connected\
+      users. Sadly, it was deprecated when Heroku dropped its free tier.",
     url: "https://github.com/Ellipsoul/online-chat-app",
     image: "/project_logos/onlinechat.png",
   },
   {
     name: "Travelling Salesman Problem Visualiser",
     description:
-      "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+      "My first ever project! An interactive visualisation tool for the Travelling\
+      Salesman Problem, with nine implemented algorithms.",
     url: "https://ellipsoul.github.io/Travelling-Salesman-Visualiser/",
     image: "/project_logos/tsp.png",
   },
@@ -223,7 +233,7 @@ export interface Interest {
   id: number;
   name: string;
   time: string;
-  description: string[];
+  description: { id: number; content: string }[];
   logo: string;
   url: string;
 }
@@ -232,16 +242,47 @@ export const interests: Interest[] = [
   {
     id: 1,
     name: "Chess",
-    time: "18 years",
-    description: ["Hi 1", "Hi 2", "Hi 3"],
+    time: "18+ years",
+    description: [
+      {
+        id: 1,
+        content:
+          "I have played chess at a national and international level for more than 10 years. My greatest\
+          achievement is winning the National Chess Championship in 2013 and becoming my country's youngest-ever\
+          National Master.",
+      },
+      {
+        id: 2,
+        content: "Most recently, I have found great enjoyment in sharing my knowledge and experience with others.",
+      },
+      {
+        id: 3,
+        content:
+          "I think more people find out I play chess before they find out my name. Chess has been core to my life and\
+          personality since I was a young child.",
+      },
+    ],
     logo: "/interest_logos/chesscom.png",
     url: "https://www.chess.com/member/ellipsoul",
   },
   {
     id: 2,
     name: "Machine Learning",
-    time: "2 years",
-    description: ["Hi 4", "Hi 5", "Hi 6"],
+    time: "1 year",
+    description: [
+      {
+        id: 1,
+        content:
+          "The AI/ML hype train is leaving the station! Fortunately, my enthusiasm in mathematics, computer science\
+          and endless pursuit of knowledge makes AI/ML the perfect side interest.",
+      },
+      {
+        id: 2,
+        content:
+          "I love reading about and following the latest machine learning developments during my spare time. One day,\
+          I will be competent enough to develop my own models.",
+      },
+    ],
     logo: "/interest_logos/huggingface.png",
     url: "https://huggingface.co/Ellipsoul/",
   },

@@ -11,7 +11,7 @@ export default function TimelineSection(): ReactElement {
         Experience
       </div>
       <div className="mx-auto max-w-4xl text-shade-800 dark:text-plain font-normal md:font-medium mb-10 text-sm md:text-base">
-        A 30-second tour of my last decade
+        A 60-second tour of my last decade
       </div>
       {/* Experience list */}
       <ul role="list" className="mx-auto max-w-4xl">
@@ -51,7 +51,11 @@ export default function TimelineSection(): ReactElement {
                   </div>
                 </div>
                 {/* Roles/responsibilities */}
-                <div>{event.content}</div>
+                <div className="flex flex-col gap-y-2">
+                  {event.content.map(paragraph => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </li>

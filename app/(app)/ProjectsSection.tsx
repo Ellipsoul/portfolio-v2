@@ -10,8 +10,8 @@ export default function ProjectsSection(): ReactElement {
       <div className="mx-auto max-w-4xl text-3xl leading-7 text-shade-800 dark:text-plain font-bold mb-4">Projects</div>
       <div className="mx-auto max-w-4xl text-shade-800 dark:text-plain font-normal md:font-medium mb-6 text-sm md:text-base">
         As a self-taught developer, I learned to code by building apps that I would enjoy sharing, using technologies
-        that I found interesting. I build to learn, so I design my projects to give me experience with a wide spectrum
-        of languages, frameworks and design patterns.
+        that I found interesting. I build to learn, so I carefully design my projects to grant myself experience with
+        various languages, frameworks and design patterns.
       </div>
       {/* Projects grid */}
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 max-w-4xl">
@@ -28,7 +28,7 @@ export default function ProjectsSection(): ReactElement {
             <div className="min-w-0 flex-1">
               <Link href={project.url} className="focus:outline-none" target="_blank">
                 <span className="absolute inset-0" aria-hidden="true" />
-                <p className="font-semibold text-xl">{project.name}</p>
+                <p className="font-semibold text-xl pb-1">{project.name}</p>
                 <p className="text-sm">{project.description}</p>
               </Link>
             </div>
