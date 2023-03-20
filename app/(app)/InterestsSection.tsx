@@ -22,8 +22,10 @@ export default function InterestsSection(): ReactElement {
               <li
                 key={interest.id}
                 className={classNames(
-                  interest.id !== 1 ? "border-t border-primary-500 dark:border-primary-100" : "",
-                  "relative py-5 px-4 my-1 bg-primary-100 dark:bg-primary-700 hover:bg-primary-200 dark:hover:bg-primary-600",
+                  interest.id !== 1 ? "border-t border-accent-300 dark:border-accent-500" : "",
+                  interest.id === 1 ? "rounded-t-lg" : "",
+                  interest.id === interests.length ? "rounded-b-lg" : "",
+                  "relative p-4 bg-primary-100 dark:bg-primary-700 hover:bg-primary-200 dark:hover:bg-primary-600",
                 )}
               >
                 <div className="flex justify-between space-x-3">
@@ -38,7 +40,7 @@ export default function InterestsSection(): ReactElement {
                   <Image src={interest.logo} width={50} height={50} alt={"Interest Image"} className="rounded-full" />
                 </div>
                 {/* Description list */}
-                <ul className="mt-2 px-1 leading-7">
+                <ul className="mt-2 pl-2 leading-7">
                   {interest.description.map(sentence => (
                     <li className="list-item list-disc leading-5" key={sentence}>
                       {sentence}

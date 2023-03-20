@@ -19,9 +19,9 @@ const DarkModeToggle = () => {
       type="button"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className="rounded-full p-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 shadow-sm
-      bg-primary-300 hover:bg-primary-200 focus-visible:outline-primary-200
-      text-shade-700 hover:text-shade-600 dark:text-shade-100 dark:hover:text-shade-50
-      dark:bg-primary-600 dark:hover:bg-primary-500 dark:focus-visible:outline-primary-500"
+      bg-primary-200 hover:bg-primary-100 focus-visible:outline-primary-200
+      text-accent-600 hover:text-accent-500 dark:text-shade-100 dark:hover:text-shade-50
+      dark:bg-accent-600 dark:hover:bg-accent-500 dark:focus-visible:outline-accent-500"
     >
       {theme === "light" ? (
         <SunIcon className="h-6 w-6 sm:h-10 sm:w-10" aria-hidden="true" />

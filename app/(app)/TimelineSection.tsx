@@ -20,7 +20,8 @@ export default function TimelineSection(): ReactElement {
             {/* Vertical timeline segment */}
             {eventIdx !== timeline.length - 1 ? (
               <span
-                className="absolute top-4 left-6 md:left-8 lg:left-10 -ml-px h-11/10 md:h-6/5 w-0.5 bg-primary-300"
+                className="absolute top-4 left-6 md:left-8 lg:left-10 -ml-px h-11/10 md:h-6/5 w-0.5
+                bg-accent-500 dark:bg-accent-300"
                 aria-hidden="true"
               />
             ) : null}
@@ -29,7 +30,7 @@ export default function TimelineSection(): ReactElement {
               {/* Image */}
               <Image
                 className="h-12 w-12 md:h-16 md:w-16 rounded-full flex items-center justify-center
-                  ring-8 ring-white ring-inset border border-primary-300"
+                  ring-8 ring-white ring-inset border border-accent-500 dark:border-accent-300"
                 src={event.imageSrc}
                 width={50}
                 height={50}

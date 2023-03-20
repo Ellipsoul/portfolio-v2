@@ -10,8 +10,16 @@ export default function IntroSection(): ReactElement {
       <div className="mx-auto max-w-4xl text-base leading-7 text-shade-800 dark:text-plain">
         <div className="flex flex-row items-center justify-between w-full">
           <div>
-            <h1 className="mt-2 text-4xl md:text-6xl font-bold tracking-normal">Hello</h1>
-            <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-normal">I am Aron Teh</h1>
+            <h1
+              className="mt-2 text-4xl md:text-6xl font-bold tracking-normal
+              text-accent-600 dark:text-accent-400"
+            >
+              Hello
+            </h1>
+            <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-normal">
+              <span>I am </span>
+              <span className="text-accent-600 dark:text-accent-400">Aron Teh</span>
+            </h1>
           </div>
           <Image className="rounded-full" width={120} height={120} src="/profile.jpg" alt={"Profile Photo"} />
         </div>

@@ -18,9 +18,11 @@ export default function ProjectsSection(): ReactElement {
         {projects.map((project: Project) => (
           <div
             key={project.name}
-            className="relative flex items-center space-x-3 rounded-lg border px-6 py-5
+            className="relative flex items-center space-x-3 rounded-lg px-6 py-5
             bg-primary-200 dark:bg-primary-600 hover:bg-primary-50 dark:hover:bg-primary-500
-            shadow-sm focus-within:ring-2 focus-within:ring-accent-500 focus-within:ring-offset-2 hover:border-primary-400"
+            shadow-sm focus-within:ring-2 focus-within:ring-accent-500 focus-within:ring-offset-2
+            border border-accent-300 dark:border-accent-500
+            hover:border-accent-500 dark:hover:border-accent-200"
           >
             <Image className="rounded-full" width={50} height={50} src={project.image} alt={"Project Logo"} />
             <div className="min-w-0 flex-1">
