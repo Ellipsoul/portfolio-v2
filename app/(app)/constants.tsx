@@ -120,9 +120,9 @@ export const timeline: TimelineItem[] = [
       "In my current position, I develop and test large-scale features for the Prime Video Living Room Platform.\
       I work primarily in TypeScript and React, but I receive exposure to a wide spectrum of internal and external\
       technologies.",
-      "My work can impact the experience of over 100 million Prime Video customers, so discipline and\
-      responsibility are built into my role. Strong communication and teamwork skills are also critical to my\
-      day-to-day performance.",
+      // "My work can impact the experience of over 100 million Prime Video customers, so discipline and\
+      // responsibility are built into my role. Strong communication and teamwork skills are also critical to my\
+      // day-to-day performance.",
     ],
   },
   {
@@ -160,8 +160,8 @@ export const timeline: TimelineItem[] = [
     time: "Aug 2013 - Jun 2017",
     content: [
       "An American high school in China is no ordinary education environment, but it gives way to the most diverse\
-      group of peers I have ever been part of. I pursued Advanced Placement examinations and scored 5 out of 5 in 9\
-      subjects.",
+      group of peers I have ever been part of.",
+      // "I pursued Advanced Placement examinations and scored 5 out of 5 in 9 subjects.",
     ],
   },
 ];
@@ -255,12 +255,12 @@ export const interests: Interest[] = [
         id: 2,
         content: "Most recently, I have found great enjoyment in sharing my knowledge and experience with others.",
       },
-      {
-        id: 3,
-        content:
-          "I think more people find out I play chess before they find out my name. Chess has been core to my life and\
-          personality since I was a young child.",
-      },
+      // {
+      //   id: 3,
+      //   content:
+      //     "I think more people find out I play chess before they find out my name. Chess has been core to my life and\
+      //     personality since I was a young child.",
+      // },
     ],
     logo: "/interest_logos/chesscom.png",
     url: "https://www.chess.com/member/ellipsoul",

@@ -18,13 +18,13 @@ export default function IntroSection(): ReactElement {
             </h1>
             <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-normal">
               <span>I am </span>
-              <span className="text-accent-600 dark:text-accent-400">Aron Teh</span>
+              <span className="text-accent-600 dark:text-accent-400 whitespace-nowrap">Aron Teh</span>
             </h1>
           </div>
           <Image className="rounded-full" width={120} height={120} src="/profile.jpg" alt={"Profile Photo"} />
         </div>
         <p className="mt-6 text-md md:text-xl leading-6 md:leading-8">
-          I'm a software engineer, chess player and machine learning enthusiast. It's nice to meet you!
+          I&apos;m a software engineer, chess player and machine learning enthusiast. It&apos;s nice to meet you!
         </p>
       </div>
       {/* Social Links */}

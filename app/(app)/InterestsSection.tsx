@@ -18,9 +18,8 @@ export default function InterestsSection(): ReactElement {
       <div className="grid grid-cols-1 gap-4 max-w-4xl">
         <ul role="list" className="divide-y divide-primary-400 dark:divide-primary-200">
           {interests.map((interest: Interest) => (
-            <Link href={interest.url} target="_blank">
+            <Link key={interest.id} href={interest.url} target="_blank">
               <li
-                key={interest.id}
                 className={classNames(
                   interest.id !== 1 ? "border-t border-accent-300 dark:border-accent-500" : "",
                   interest.id === 1 ? "rounded-t-lg" : "",
