@@ -223,7 +223,7 @@ export interface Interest {
   id: number;
   name: string;
   time: string;
-  description: string;
+  description: string[];
   logo: string;
   url: string;
 }
@@ -233,8 +233,11 @@ export const interests: Interest[] = [
     id: 1,
     name: "Chess",
     time: "18 years",
-    description:
-      "Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.",
+    description: [
+      "Doloremque dolorem maiores assumenda dolorem facilis.",
+      "Doloremque dolorem maiores assumenda dolorem facilis.",
+      "Doloremque dolorem maiores assumenda dolorem facilis.",
+    ],
     logo: "/interest_logos/chesscom.png",
     url: "https://www.chess.com/member/ellipsoul",
   },
@@ -242,8 +245,11 @@ export const interests: Interest[] = [
     id: 2,
     name: "Machine Learning",
     time: "2 years",
-    description:
-      "Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.",
+    description: [
+      "Doloremque dolorem maiores assumenda dolorem facilis.",
+      "Doloremque dolorem maiores assumenda dolorem facilis.",
+      "Doloremque dolorem maiores assumenda dolorem facilis.",
+    ],
     logo: "/interest_logos/huggingface.png",
     url: "https://huggingface.co/Ellipsoul/",
   },

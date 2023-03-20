@@ -25,18 +25,24 @@ export default function InterestsSection(): ReactElement {
               bg-primary-100 dark:bg-primary-700 hover:bg-primary-200 dark:hover:bg-primary-600 "
               >
                 <div className="flex justify-between space-x-3">
+                  {/* Name and duration */}
                   <div className="flex-1">
                     <div className="block focus:outline-none">
-                      <p className="text-lg font-medium">{interest.name}</p>
+                      <p className="text-lg font-semibold">{interest.name}</p>
                       <p className="text-sm">{interest.time}</p>
                     </div>
                   </div>
+                  {/* Image */}
                   <Image src={interest.logo} width={50} height={50} alt={"Interest Image"} className="rounded-full" />
                 </div>
-
-                <div className="mt-1">
-                  <p className="text-sm">{interest.description}</p>
-                </div>
+                {/* Description list */}
+                <ul className="mt-2 px-1 leading-7">
+                  {interest.description.map(sentence => (
+                    <li className="list-item list-disc leading-5" key={sentence}>
+                      {sentence}
+                    </li>
+                  ))}
+                </ul>
               </li>
             </Link>
           ))}
