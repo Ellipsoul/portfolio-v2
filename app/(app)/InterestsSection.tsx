@@ -39,7 +39,7 @@ export default function InterestsSection(): ReactElement {
                   <Image src={interest.logo} width={50} height={50} alt={"Interest Image"} className="rounded-full" />
                 </div>
                 {/* Description list */}
-                <ul className="mt-2 pl-2 leading-7">
+                <ul className="mt-2 pl-4 leading-7">
                   {interest.description.map(sentence => (
                     <li className="list-item list-disc leading-5 mb-1" key={sentence.id}>
                       {sentence.content}

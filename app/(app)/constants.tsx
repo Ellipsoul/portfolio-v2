@@ -159,7 +159,7 @@ export const timeline: TimelineItem[] = [
     location: "Shanghai, China",
     time: "Aug 2013 - Jun 2017",
     content: [
-      "An American high school in China is no ordinary education environment, but it gives way to the most diverse\
+      "An American high school in China is no ordinary education environment, but it gave way to the most diverse\
       group of peers I have ever been part of.",
       // "I pursued Advanced Placement examinations and scored 5 out of 5 in 9 subjects.",
     ],
