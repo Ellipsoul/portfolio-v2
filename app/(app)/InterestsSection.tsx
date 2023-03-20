@@ -18,25 +18,27 @@ export default function InterestsSection(): ReactElement {
       <div className="grid grid-cols-1 gap-4 max-w-4xl">
         <ul role="list" className="divide-y divide-primary-400 dark:divide-primary-200">
           {interests.map((interest: Interest) => (
-            <li
-              key={interest.id}
-              className="relative py-5 px-4 focus-within:ring-2 focus-within:ring-inset focus-within:ring-accent-600
+            <Link href={interest.url} target="_blank">
+              <li
+                key={interest.id}
+                className="relative py-5 px-4
               bg-primary-100 dark:bg-primary-700 hover:bg-primary-200 dark:hover:bg-primary-600 "
-            >
-              <div className="flex justify-between space-x-3">
-                <div className="flex-1">
-                  <Link href={interest.url} target="_blank" className="block focus:outline-none">
-                    <span className="absolute inset-0" aria-hidden="true" />
-                    <p className="truncate text-sm font-medium">{interest.name}</p>
-                    <p className="truncate text-sm">{interest.time}</p>
-                  </Link>
+              >
+                <div className="flex justify-between space-x-3">
+                  <div className="flex-1">
+                    <div className="block focus:outline-none">
+                      <p className="text-lg font-medium">{interest.name}</p>
+                      <p className="text-sm">{interest.time}</p>
+                    </div>
+                  </div>
+                  <Image src={interest.logo} width={50} height={50} alt={"Interest Image"} className="rounded-full" />
                 </div>
-                <Image src={interest.logo} width={40} height={40} alt={"Interest Image"} className="rounded-full" />
-              </div>
-              <div className="mt-1">
-                <p className="text-sm">{interest.description}</p>
-              </div>
-            </li>
+
+                <div className="mt-1">
+                  <p className="text-sm">{interest.description}</p>
+                </div>
+              </li>
+            </Link>
           ))}
         </ul>
       </div>

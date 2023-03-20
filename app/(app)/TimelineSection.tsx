@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import { timeline } from "./constants";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TimelineSection(): ReactElement {
   return (
@@ -24,11 +25,11 @@ export default function TimelineSection(): ReactElement {
               />
             ) : null}
             {/* Main timeline event container */}
-            <div className="relative flex space-x-3 lg:pl-2">
+            <div className="relative flex space-x-3 lg:pl-2" tabIndex={0}>
               {/* Image */}
               <Image
                 className="h-12 w-12 md:h-16 md:w-16 rounded-full flex items-center justify-center
-                ring-8 ring-white ring-inset border border-primary-300"
+                  ring-8 ring-white ring-inset border border-primary-300"
                 src={event.imageSrc}
                 width={50}
                 height={50}
