@@ -1,4 +1,3 @@
-import { CheckCircleIcon } from "@heroicons/react/20/solid";
 import React, { ReactElement } from "react";
 import { ContactButton, contactButtons } from "./constants";
 import Link from "next/link";

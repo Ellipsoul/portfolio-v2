@@ -1,7 +1,6 @@
 import { ReactElement } from "react";
 import { timeline } from "./constants";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function TimelineSection(): ReactElement {
   return (
