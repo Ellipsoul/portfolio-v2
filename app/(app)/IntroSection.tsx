@@ -37,6 +37,7 @@ export default function IntroSection(): ReactElement {
             key={item.name}
             target="_blank"
             href={item.href}
+            title={item.name}
             className="text-zinc-700 hover:text-zinc-600 dark:text-zinc-100 dark:hover:text-plain
             mx-auto hover:scale-125"
           >
