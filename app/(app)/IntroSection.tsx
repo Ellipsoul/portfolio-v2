@@ -24,7 +24,7 @@ export default function IntroSection(): ReactElement {
           <Image className="rounded-full" width={120} height={120} src="/profile.jpg" alt={"Profile Photo"} />
         </div>
         <p className="mt-6 text-md md:text-xl leading-6 md:leading-8">
-          I&apos;m a software engineer, chess player and machine learning enthusiast. It&apos;s nice to meet you!
+          I&apos;m a software engineer, chess player and quantitative finance enthusiast. It&apos;s nice to meet you!
         </p>
       </div>
       {/* Social Links */}

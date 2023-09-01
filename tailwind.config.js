@@ -21,7 +21,7 @@ module.exports = {
         plain: colors.white,
         shade: colors.gray,
         primary: colors.slate,
-        accent: colors.sky,
+        accent: colors.indigo,
         // secondary: colors.zinc,
       },
     },

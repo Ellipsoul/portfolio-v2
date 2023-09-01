@@ -242,7 +242,7 @@ export const interests: Interest[] = [
   {
     id: 1,
     name: "Chess",
-    time: "19 years",
+    time: "20 years",
     description: [
       {
         id: 1,
