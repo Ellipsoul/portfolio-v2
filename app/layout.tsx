@@ -5,7 +5,9 @@ import React from "react";
 
 export const metadata = {
   title: "Aron Teh",
-  description: "Portfolio website for Aron Teh",
+  description:
+    "Portfolio website for Aron Teh. Ambitious and enthusiastic fullstack software engineer, \
+    with interest in quantitative finance and machine learning. Lifelong competitive chess player.",
 };
 
 const inter = Inter({
