@@ -292,12 +292,7 @@ export const interests: Interest[] = [
 export interface ContactButton {
   id: number;
   text: string;
-  icon: ForwardRefExoticComponent<
-    SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
-      titleId?: string | undefined;
-    }
-  >;
+  icon: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref">>;
   href: string;
 }
 
