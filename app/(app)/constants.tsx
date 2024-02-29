@@ -110,19 +110,28 @@ export interface TimelineItem {
 
 export const timeline: TimelineItem[] = [
   {
+    id: 0,
+    organisation: "Stripe",
+    role: "Software Engineer",
+    imageSrc: "/company_logos/stripe.png",
+    location: "Dublin, Ireland",
+    time: "March 2024 - present",
+    content: [
+      "In my current position, I build complex API features for Stripe's Buy Now Pay Later integrations, \
+      working primarily in Java and Ruby.",
+    ],
+  },
+  {
     id: 1,
     organisation: "Amazon",
     role: "Software Engineer",
     imageSrc: "/company_logos/amazon.png",
     location: "London, United Kingdom",
-    time: "Nov 2022 - present",
+    time: "Nov 2022 - February 2024",
     content: [
-      "In my current position, I develop and test large-scale features for the Prime Video Living Room Platform.\
-      I work primarily in TypeScript and React, but I receive exposure to a wide spectrum of internal and external\
+      "I developed and tested large-scale features for the Prime Video Living Room Platform.\
+      I worked primarily in TypeScript and React, but I receive exposure to a wide spectrum of internal and external\
       technologies.",
-      // "My work can impact the experience of over 100 million Prime Video customers, so discipline and\
-      // responsibility are built into my role. Strong communication and teamwork skills are also critical to my\
-      // day-to-day performance.",
     ],
   },
   {
@@ -242,7 +251,7 @@ export const interests: Interest[] = [
   {
     id: 1,
     name: "Chess",
-    time: "20 years",
+    time: "20+ years",
     description: [
       {
         id: 1,
@@ -255,12 +264,6 @@ export const interests: Interest[] = [
         id: 2,
         content: "Most recently, I have found great enjoyment in sharing my knowledge and experience with others.",
       },
-      // {
-      //   id: 3,
-      //   content:
-      //     "I think more people find out I play chess before they find out my name. Chess has been core to my life and\
-      //     personality since I was a young child.",
-      // },
     ],
     logo: "/interest_logos/chesscom.png",
     url: "https://www.chess.com/member/ellipsoul",
