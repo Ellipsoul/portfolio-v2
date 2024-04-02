@@ -117,8 +117,8 @@ export const timeline: TimelineItem[] = [
     location: "Dublin, Ireland",
     time: "March 2024 - present",
     content: [
-      "In my current position, I build complex API features for Stripe's Buy Now Pay Later integrations, \
-      working primarily in Java and Ruby.",
+      "In my current position, I build scalable API integrations for Stripe's Buy Now Pay Later partners. \
+      My work's tech stack consists primarily of Java, gRPC, MongoDB, and Ruby.",
     ],
   },
   {
