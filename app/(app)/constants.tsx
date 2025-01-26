@@ -189,10 +189,18 @@ export const projects: Project[] = [
     name: "SkyStory",
     description:
       "A fully responsive, dynamically themed weather app offering live or forecast weather data for almost\
-      any city worldwide. Powered by Firebase, authenticated users will have their historical\
-      searches saved for easy access.",
+    any city worldwide. Powered by Firebase, authenticated users will have their historical\
+    searches saved for easy access.",
     url: "https://skystory.aronteh.com/",
     image: "/project_logos/skystory.png",
+  },
+  {
+    name: "Arceo",
+    description:
+      "A full-stack, enterprise-grade web application where users could generate,\
+    customise and store fashion designs. Built with Next.js, Firebase, and a fine-tuned AI model.",
+    url: "https://arceo.aronteh.com/",
+    image: "/project_logos/arceo.png",
   },
   {
     name: "NanoNote",
@@ -212,14 +220,6 @@ export const projects: Project[] = [
     image: "/project_logos/turbofile.png",
   },
   {
-    name: "Quiz App",
-    description:
-      "A multi-platform quiz app written with Flutter and Dart. Test your knowledge on various\
-    programming topics, and track your progress to completion.",
-    url: "https://quizapp.aronteh.com/",
-    image: "/project_logos/quizapp.png",
-  },
-  {
     name: "Online Chat App",
     description:
       "A simple chat application where you can log in with a username and chat with all connected\
@@ -234,6 +234,22 @@ export const projects: Project[] = [
       Salesman Problem, with nine implemented algorithms.",
     url: "https://ellipsoul.github.io/Travelling-Salesman-Visualiser/",
     image: "/project_logos/tsp.png",
+  },
+  {
+    name: "Quiz App",
+    description:
+      "A multi-platform quiz app written with Flutter and Dart. Test your knowledge on various\
+    programming topics, and track your progress to completion.",
+    url: "https://quizapp.aronteh.com/",
+    image: "/project_logos/quizapp.png",
+  },
+  {
+    name: "Brick Breaker",
+    description:
+      "A classic brick breaker game made in 30 minutes to test the limits of OpenAI o1. Supports\
+      levels, lives, difficulty, and score tracking.",
+    url: "https://brickbreaker.aronteh.com/",
+    image: "/project_logos/brickbreaker.png",
   },
 ];
 
