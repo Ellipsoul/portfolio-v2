@@ -43,7 +43,7 @@ export default function IntroSection(): ReactElement {
             target="_blank"
             href={item.href}
             title={item.name}
-            className="text-zinc-700 hover:text-zinc-600 dark:text-zinc-100 dark:hover:text-plain
+            className="text-zinc-800 hover:text-zinc-700 dark:text-zinc-100 dark:hover:text-plain
             mx-auto hover:scale-125"
           >
             <span className="sr-only">{item.name}</span>
