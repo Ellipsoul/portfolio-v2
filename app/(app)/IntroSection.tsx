@@ -14,9 +14,9 @@ export default function IntroSection(): ReactElement {
               text-accent-600 dark:text-accent-400">
               Hello
             </h1>
-            <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-normal">
-              <span>I am</span>
-              <span className="text-accent-600 dark:text-accent-400 whitespace-nowrap ml-2">
+            <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-normal flex xs:flex-row flex-col">
+              <span className="whitespace-nowrap">I am</span>
+              <span className="text-accent-600 dark:text-accent-400 whitespace-nowrap xs:ml-2">
                 Aron Teh
               </span>
             </h1>

@@ -13,6 +13,9 @@ module.exports = {
         "11/10": "110%",
         "6/5": "120%",
       },
+      screens: {
+        "xs": "450px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
