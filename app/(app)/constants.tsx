@@ -111,15 +111,28 @@ export interface TimelineItem {
 
 export const timeline: TimelineItem[] = [
   {
+    id: 1,
+    organisation: "Google",
+    role: "Software and Site Reliability Engineer",
+    imageSrc: "/company_logos/google.png",
+    location: "London, United Kingdom",
+    time: "July 2025 - present",
+    content: [
+      "At Google, I design and develop robust and reliable infrastructure for Google Cloud Compute Engine, \
+      specialising in large-scale Machine Learning workflows using Graphics Processing Units (GPUs) and \
+      Tensor Processing Units (TPUs).",
+    ],
+  },
+  {
     id: 0,
     organisation: "Stripe",
     role: "Software Engineer",
     imageSrc: "/company_logos/stripe.png",
     location: "Dublin, Ireland",
-    time: "March 2024 - present",
+    time: "March 2024 - April 2025",
     content: [
-      "In my current position, I build scalable API integrations for Stripe's Local Payment Methods (LPMs). \
-      My work's tech stack consists primarily of Java, gRPC, MongoDB, and Ruby.",
+      "I built scalable backend API integrations for Stripe's Local Payment Methods (LPMs). \
+      Stripe has a diverse tech stack, and I worked primarily with Java, gRPC, MongoDB, and Ruby.",
     ],
   },
   {
