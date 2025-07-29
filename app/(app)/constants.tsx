@@ -2,10 +2,39 @@ import {
   ChatBubbleLeftEllipsisIcon,
   EnvelopeIcon,
 } from "@heroicons/react/20/solid";
-import { ForwardRefExoticComponent, SVGProps } from "react";
+import Link from "next/link";
+import { ForwardRefExoticComponent, ReactNode, SVGProps } from "react";
 
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
+}
+
+// Reusable link component for timeline content
+export function TimelineLink({
+  href,
+  children,
+  leadingSpace = false,
+  trailingSpace = false,
+}: {
+  href: string;
+  children: ReactNode;
+  leadingSpace?: boolean;
+  trailingSpace?: boolean;
+}): ReactNode {
+  return (
+    <>
+      {leadingSpace && " "}
+      <Link
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-accent-600 dark:text-accent-400 hover:underline"
+      >
+        {children}
+      </Link>
+      {trailingSpace && " "}
+    </>
+  );
 }
 
 // Intro Section Constants
@@ -106,7 +135,7 @@ export interface TimelineItem {
   imageSrc: string;
   location: string;
   time: string;
-  content: string[];
+  content: ReactNode[]; // Changed from string[] to ReactNode[]
 }
 
 export const timeline: TimelineItem[] = [
@@ -118,9 +147,19 @@ export const timeline: TimelineItem[] = [
     location: "London, United Kingdom",
     time: "July 2025 - present",
     content: [
-      "At Google, I design and develop robust and reliable infrastructure for Google Cloud Compute Engine, \
-      specialising in large-scale Machine Learning workflows using Graphics Processing Units (GPUs) and \
-      Tensor Processing Units (TPUs).",
+      <>
+        At Google, I maintain and build robust and reliable systems for Google
+        Cloud&apos;s
+        <TimelineLink
+          href="https://cloud.google.com/solutions/ai-hypercomputer"
+          leadingSpace
+        >
+          AI Hypercomputer
+        </TimelineLink>
+        , running large-scale Machine Learning workflows using Graphics
+        Processing Units (GPUs) and Tensor Processing Units (TPUs) to meet
+        rapidly growing demand.
+      </>,
     ],
   },
   {
@@ -131,8 +170,18 @@ export const timeline: TimelineItem[] = [
     location: "Dublin, Ireland",
     time: "March 2024 - April 2025",
     content: [
-      "I built scalable backend API integrations for Stripe's Local Payment Methods (LPMs). \
-      Stripe has a diverse tech stack, and I worked primarily with Java, gRPC, MongoDB, and Ruby.",
+      <>
+        I built scalable backend API integrations for Stripe&apos;s
+        <TimelineLink
+          href="https://stripe.com/gb/pricing/local-payment-methods"
+          leadingSpace
+          trailingSpace
+        >
+          Local Payment Methods
+        </TimelineLink>
+        (LPMs). Stripe has a diverse tech stack, and I worked primarily with
+        Java, gRPC, MongoDB, and Ruby.
+      </>,
     ],
   },
   {
@@ -143,9 +192,19 @@ export const timeline: TimelineItem[] = [
     location: "London, United Kingdom",
     time: "Nov 2022 - February 2024",
     content: [
-      "I developed and tested large-scale features for the Prime Video Living Room Platform.\
-      I worked primarily in TypeScript and React, but I receive exposure to a wide spectrum of internal and external\
-      technologies.",
+      <>
+        I developed and tested large-scale features for the
+        <TimelineLink
+          href="https://www.primevideo.com/"
+          leadingSpace
+          trailingSpace
+        >
+          Prime Video
+        </TimelineLink>
+        Living Room Platform. I worked primarily in TypeScript and React, but I
+        receive exposure to a wide spectrum of internal and external
+        technologies.
+      </>,
     ],
   },
   {
@@ -156,9 +215,17 @@ export const timeline: TimelineItem[] = [
     location: "United Kingdom",
     time: "Sep 2021 - Oct 2022",
     content: [
-      "During my first full-time position, I performed full-stack engineering duties within a small team using Angular,\
-      TypeScript, Java and GraphQL. My team was responsible for an Angular component library, as well as a Content\
-      Management System that over 100 external clients used.",
+      <>
+        I delivered full-stack engineering efforts within a small team using
+        Angular, TypeScript, Java and GraphQL. My team was responsible for an
+        Angular component library and a Content Management System that powered
+        <TimelineLink
+          leadingSpace
+          href="https://www.thgingenuity.com/commerce"
+        >
+          THG Commerce
+        </TimelineLink>, used by over 100 external clients.
+      </>,
     ],
   },
   {

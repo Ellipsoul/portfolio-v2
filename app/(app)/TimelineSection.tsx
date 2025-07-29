@@ -17,13 +17,15 @@ export default function TimelineSection(): ReactElement {
         {timeline.map((event, eventIdx) => (
           <li key={event.id} className="relative pb-8 mb-8">
             {/* Vertical timeline segment */}
-            {eventIdx !== timeline.length - 1 ? (
-              <span
-                className="absolute top-4 left-6 md:left-8 lg:left-10 -ml-px h-11/10 md:h-6/5 w-0.5
+            {eventIdx !== timeline.length - 1
+              ? (
+                <span
+                  className="absolute top-4 left-6 md:left-8 lg:left-10 -ml-px h-11/10 md:h-6/5 w-0.5
                 bg-accent-500 dark:bg-accent-300"
-                aria-hidden="true"
-              />
-            ) : null}
+                  aria-hidden="true"
+                />
+              )
+              : null}
             {/* Main timeline event container */}
             <div className="relative flex space-x-3 lg:pl-2" tabIndex={0}>
               {/* Image */}
@@ -41,7 +43,9 @@ export default function TimelineSection(): ReactElement {
                 {/* Company, location, dates, position */}
                 <div className="flex flex-col md:flex-row justify-between mb-2 gap-y-1">
                   <div className="flex flex-col">
-                    <span className="font-bold text-xl">{event.organisation}</span>
+                    <span className="font-bold text-xl">
+                      {event.organisation}
+                    </span>
                     <span className="text-lg leading-tight">{event.role}</span>
                   </div>
                   <div className="flex flex-col gap-x-3 md:text-right text-sm md:text-base">
@@ -51,8 +55,8 @@ export default function TimelineSection(): ReactElement {
                 </div>
                 {/* Roles/responsibilities */}
                 <div className="flex flex-col gap-y-2">
-                  {event.content.map(paragraph => (
-                    <p key={paragraph}>{paragraph}</p>
+                  {event.content.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
                   ))}
                 </div>
               </div>
