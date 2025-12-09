@@ -27,7 +27,7 @@ export default function InterestsSection(): ReactElement {
                   "relative p-4 bg-primary-100 dark:bg-primary-700 hover:bg-primary-200 dark:hover:bg-primary-600",
                 )}
               >
-                <div className="flex justify-between space-x-3">
+                <div className="flex justify-between gap-x-3">
                   {/* Name and duration */}
                   <div className="flex-1">
                     <div className="block focus:outline-none">

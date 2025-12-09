@@ -18,7 +18,7 @@ export default function ContactSection(): ReactElement {
             target="_blank"
             className="inline-flex items-center gap-x-4 rounded-md bg-accent-600 py-4 px-5
             text-lg md:text-xl
-            font-semibold text-white shadow-sm hover:bg-accent-500 focus-visible:outline
+            font-semibold text-white shadow-xs hover:bg-accent-500 focus-visible:outline
             focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-600"
           >
             <contactButton.icon className="-ml-0.5 h-8 w-8" aria-hidden="true" />

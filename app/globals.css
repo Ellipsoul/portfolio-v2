@@ -1,3 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* Color aliases - mapping to default Tailwind colors */
+  /* plain maps to white */
+  --color-plain: #ffffff;
+
+  /* shade maps to gray - define shades used in codebase */
+  --color-shade-50: #f9fafb;
+  --color-shade-100: #f3f4f6;
+  --color-shade-800: #1f2937;
+
+  /* primary maps to slate - define shades used in codebase */
+  --color-primary-50: #f8fafc;
+  --color-primary-100: #f1f5f9;
+  --color-primary-200: #e2e8f0;
+  --color-primary-300: #cbd5e1;
+  --color-primary-400: #94a3b8;
+  --color-primary-500: #64748b;
+  --color-primary-600: #475569;
+  --color-primary-700: #334155;
+  --color-primary-900: #0f172a;
+
+  /* Accent color palette */
+  --color-accent-50: #eff6ff;
+  --color-accent-100: #dbeafe;
+  --color-accent-200: #c0dbfd;
+  --color-accent-300: #94c5fc;
+  --color-accent-400: #62a5f8;
+  --color-accent-500: #4285f4;
+  --color-accent-600: #2763e9;
+  --color-accent-700: #1f4ed6;
+  --color-accent-800: #2041ad;
+  --color-accent-900: #1f3b89;
+  --color-accent-950: #182553;
+
+  /* Custom spacing values removed - using arbitrary values h-[110%] and h-[120%] instead */
+
+  /* Custom breakpoint */
+  --breakpoint-xs: 450px;
+
+  /* Custom background image */
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+
+  /* Font family - Inter var is loaded via Next.js font system */
+  --font-sans: "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}

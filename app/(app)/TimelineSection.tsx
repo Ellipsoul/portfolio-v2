@@ -20,14 +20,14 @@ export default function TimelineSection(): ReactElement {
             {eventIdx !== timeline.length - 1
               ? (
                 <span
-                  className="absolute top-4 left-6 md:left-8 lg:left-10 -ml-px h-11/10 md:h-6/5 w-0.5
+                  className="absolute top-4 left-6 md:left-8 lg:left-10 -ml-px h-[110%] md:h-[120%] w-0.5
                 bg-accent-500 dark:bg-accent-300"
                   aria-hidden="true"
                 />
               )
               : null}
             {/* Main timeline event container */}
-            <div className="relative flex space-x-3 lg:pl-2" tabIndex={0}>
+            <div className="relative flex gap-x-3 lg:pl-2" tabIndex={0}>
               {/* Image */}
               <Image
                 className="h-12 w-12 md:h-16 md:w-16 rounded-full flex items-center justify-center
