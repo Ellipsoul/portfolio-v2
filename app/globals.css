@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Enable class-based dark mode variant - works with next-themes which adds .dark to html */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Color aliases - mapping to default Tailwind colors */
   /* plain maps to white */
