@@ -11,7 +11,7 @@ import ContactSection from "./(app)/ContactSection";
 export default function HomePage(): ReactElement {
   return (
     <div className="mx-auto px-4 sm:px-12 lg:px-24
-      bg-gradient-to-r from-primary-900 via-accent-900 to-primary-900">
+      bg-linear-to-r from-primary-900 via-accent-900 to-primary-900">
       <div className="mx-auto max-w-5xl bg-primary-900">
         <HeaderSection />
         <IntroSection />
