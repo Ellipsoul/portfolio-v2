@@ -28,7 +28,7 @@ export function TimelineLink({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-accent-600 dark:text-accent-400 hover:underline"
+        className="text-accent-400 hover:underline"
       >
         {children}
       </Link>

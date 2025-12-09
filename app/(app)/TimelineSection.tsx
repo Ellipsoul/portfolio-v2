@@ -6,10 +6,10 @@ export default function TimelineSection(): ReactElement {
   return (
     <section className="px-8 lg:px-12">
       {/* Heading */}
-      <div className="mx-auto max-w-4xl text-3xl leading-7 text-shade-800 dark:text-plain font-bold mb-2">
+      <div className="mx-auto max-w-4xl text-3xl leading-7 text-plain font-bold mb-2">
         Experience
       </div>
-      <div className="mx-auto max-w-4xl text-shade-800 dark:text-plain font-normal md:font-medium mb-10 text-sm md:text-base">
+      <div className="mx-auto max-w-4xl text-text-body font-normal md:font-medium mb-10 text-sm md:text-base">
         A 60-second tour of my last decade
       </div>
       {/* Experience list */}
@@ -21,7 +21,7 @@ export default function TimelineSection(): ReactElement {
               ? (
                 <span
                   className="absolute top-4 left-6 md:left-8 lg:left-10 -ml-px h-[110%] md:h-[120%] w-0.5
-                bg-accent-500 dark:bg-accent-300"
+                bg-accent-300"
                   aria-hidden="true"
                 />
               )
@@ -31,7 +31,7 @@ export default function TimelineSection(): ReactElement {
               {/* Image */}
               <Image
                 className="h-12 w-12 md:h-16 md:w-16 rounded-full flex items-center justify-center
-                  ring-8 ring-white ring-inset border border-accent-500 dark:border-accent-300"
+                  ring-8 ring-white ring-inset border border-accent-300"
                 src={event.imageSrc}
                 width={50}
                 height={50}
@@ -43,20 +43,20 @@ export default function TimelineSection(): ReactElement {
                 {/* Company, location, dates, position */}
                 <div className="flex flex-col md:flex-row justify-between mb-2 gap-y-1">
                   <div className="flex flex-col">
-                    <span className="font-bold text-xl">
+                    <span className="font-bold text-xl text-plain">
                       {event.organisation}
                     </span>
-                    <span className="text-lg leading-tight">{event.role}</span>
+                    <span className="text-lg leading-tight text-text-body">{event.role}</span>
                   </div>
                   <div className="flex flex-col gap-x-3 md:text-right text-sm md:text-base">
-                    <span>{event.location}</span>
-                    <span>{event.time}</span>
+                    <span className="text-text-body">{event.location}</span>
+                    <span className="text-text-body">{event.time}</span>
                   </div>
                 </div>
                 {/* Roles/responsibilities */}
                 <div className="flex flex-col gap-y-2">
                   {event.content.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
+                    <p key={index} className="text-text-body">{paragraph}</p>
                   ))}
                 </div>
               </div>

@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
-/* Enable class-based dark mode variant - works with next-themes which adds .dark to html */
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
   /* Color aliases - mapping to default Tailwind colors */
   /* plain maps to white */
   --color-plain: #ffffff;
+
+  /* Body text color - light gray for non-heading text */
+  --color-text-body: #e2e4e9;
 
   /* shade maps to gray - define shades used in codebase */
   --color-shade-50: #f9fafb;

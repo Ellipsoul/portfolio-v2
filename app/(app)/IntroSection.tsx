@@ -7,16 +7,16 @@ export default function IntroSection(): ReactElement {
   return (
     <section className="px-8 lg:px-12 pb-10">
       {/* Greeting and introduction */}
-      <div className="mx-auto max-w-4xl text-base leading-7 text-shade-800 dark:text-plain">
+      <div className="mx-auto max-w-4xl text-base leading-7 text-plain">
         <div className="flex flex-row items-center justify-between w-full">
           <div>
             <h1 className="mt-2 text-4xl md:text-6xl font-bold tracking-normal
-              text-accent-600 dark:text-accent-400">
+              text-accent-400">
               Hello
             </h1>
             <h1 className="mt-2 text-3xl md:text-4xl font-bold tracking-normal flex xs:flex-row flex-col">
-              <span className="whitespace-nowrap">I am</span>
-              <span className="text-accent-600 dark:text-accent-400 whitespace-nowrap xs:ml-2">
+              <span className="text-plain whitespace-nowrap">I am</span>
+              <span className="text-accent-400 whitespace-nowrap xs:ml-2">
                 Aron Teh
               </span>
             </h1>
@@ -29,7 +29,7 @@ export default function IntroSection(): ReactElement {
             alt={"Profile Photo"}
           />
         </div>
-        <p className="mt-6 text-md md:text-xl leading-6 md:leading-8">
+        <p className="mt-6 text-md md:text-xl leading-6 md:leading-8 text-text-body">
           I&apos;m a software engineer and chess player. It&apos;s nice to meet
           you!
         </p>
@@ -43,7 +43,7 @@ export default function IntroSection(): ReactElement {
             target="_blank"
             href={item.href}
             title={item.name}
-            className="text-zinc-800 hover:text-zinc-700 dark:text-zinc-100 dark:hover:text-plain
+            className="text-zinc-100 hover:text-plain
             mx-auto hover:scale-125"
           >
             <span className="sr-only">{item.name}</span>
