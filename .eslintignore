@@ -1,6 +1,0 @@
-*.json
-*.webmanifest
-node_modules
-.next
-.vscode
-*.d.ts

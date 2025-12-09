@@ -41,7 +41,7 @@ export function TimelineLink({
 export interface NavigationSocialItem {
   name: string;
   href: string;
-  icon: any;
+  icon: React.ComponentType<SVGProps<SVGSVGElement>>;
   class: string;
 }
 
@@ -49,7 +49,7 @@ export const social: NavigationSocialItem[] = [
   {
     name: "Resume",
     href: "/Aron_Teh_Resume.pdf",
-    icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
+    icon: (props: SVGProps<SVGSVGElement>) => (
       <svg
         fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ export const social: NavigationSocialItem[] = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/aronteh/",
-    icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
+    icon: (props: SVGProps<SVGSVGElement>) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
           fillRule="evenodd"
@@ -80,7 +80,7 @@ export const social: NavigationSocialItem[] = [
   {
     name: "GitHub",
     href: "https://github.com/ellipsoul",
-    icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
+    icon: (props: SVGProps<SVGSVGElement>) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
           fillRule="evenodd"
@@ -99,7 +99,7 @@ export const social: NavigationSocialItem[] = [
   {
     name: "Facebook",
     href: "https://www.facebook.com/teharon/",
-    icon: (props: any) => (
+    icon: (props: SVGProps<SVGSVGElement>) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
           fillRule="evenodd"
@@ -115,7 +115,7 @@ export const social: NavigationSocialItem[] = [
   {
     name: "Twitter",
     href: "https://twitter.com/aron_teh",
-    icon: (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
+    icon: (props: SVGProps<SVGSVGElement>) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646
         4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27
@@ -163,7 +163,7 @@ export const timeline: TimelineItem[] = [
     ],
   },
   {
-    id: 0,
+    id: 2,
     organisation: "Stripe",
     role: "Software Engineer",
     imageSrc: "/company_logos/stripe.png",
@@ -185,7 +185,7 @@ export const timeline: TimelineItem[] = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     organisation: "Amazon",
     role: "Software Engineer",
     imageSrc: "/company_logos/amazon.png",
@@ -208,7 +208,7 @@ export const timeline: TimelineItem[] = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     organisation: "THG",
     role: "Software Engineer",
     imageSrc: "/company_logos/thg.png",
@@ -229,7 +229,7 @@ export const timeline: TimelineItem[] = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     organisation: "Imperial College London",
     role: "MEng Aeronautical Engineering",
     imageSrc: "/company_logos/imperial.png",
@@ -242,7 +242,7 @@ export const timeline: TimelineItem[] = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     organisation: "Concordia International School Shanghai",
     role: "High School",
     imageSrc: "/company_logos/concordia.png",
