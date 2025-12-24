@@ -266,6 +266,22 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "Relay",
+    description:
+    "A feature-rich, innovatively-designed Bughouse Chess math replay, analysis and sharing tool.\
+    Made for and enjoyed by the Bughouse Chess community.",
+    url: "https://relay.aronteh.com/",
+    image: "/project_logos/relay.png",
+  },
+  {
+    name: "Arceo",
+    description:
+    "A full-stack, enterprise-grade web application where users could generate,\
+    customise and store fashion designs. Built with Next.js, Firebase, and a fine-tuned AI model.",
+    url: "https://arceo.aronteh.com/",
+    image: "/project_logos/arceo.png",
+  },
+  {
     name: "SkyStory",
     description:
       "A fully responsive, dynamically themed weather app offering live or forecast weather data for almost\
@@ -273,14 +289,6 @@ export const projects: Project[] = [
     searches saved for easy access.",
     url: "https://skystory.aronteh.com/",
     image: "/project_logos/skystory.png",
-  },
-  {
-    name: "Arceo",
-    description:
-      "A full-stack, enterprise-grade web application where users could generate,\
-    customise and store fashion designs. Built with Next.js, Firebase, and a fine-tuned AI model.",
-    url: "https://arceo.aronteh.com/",
-    image: "/project_logos/arceo.png",
   },
   {
     name: "NanoNote",
@@ -322,15 +330,7 @@ export const projects: Project[] = [
     programming topics, and track your progress to completion.",
     url: "https://quizapp.aronteh.com/",
     image: "/project_logos/quizapp.png",
-  },
-  {
-    name: "Brick Breaker",
-    description:
-      "A classic brick breaker game made in 30 minutes to test the limits of OpenAI o1. Supports\
-      levels, lives, difficulty, and score tracking.",
-    url: "https://brickbreaker.aronteh.com/",
-    image: "/project_logos/brickbreaker.png",
-  },
+  }
 ];
 
 // Interests Section Constants
