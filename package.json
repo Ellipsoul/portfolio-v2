@@ -1,6 +1,6 @@
 {
   "name": "portfolio-v2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@heroicons/react": "latest",
+    "@vercel/analytics": "^1.6.1",
     "next": "^16.1.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
